@@ -6,7 +6,7 @@ let somma =0;
 
 for (i=0; i<= numero; i++ ){
     if( i%3==0){
-  somma= somma+i;
+      somma= somma+i;
     }
 }
 console.log("La somma è: "+ somma);
