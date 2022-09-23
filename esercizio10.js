@@ -46,7 +46,7 @@ function forbice (gioc2) {
         prompt ("Pareggio ");
     }
 
-    if (gioc2=="scarta"){
+    if (gioc2=="carta"){
         prompt ("Ha vinto giocatore 1");
     }
     return "La partita è finita";
