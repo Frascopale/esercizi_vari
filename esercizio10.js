@@ -8,7 +8,7 @@ g1 = prompt ("Giocatore 1: carta, sasso o forbice: ");
 g2 = prompt ("Giocatore 2: carta, sasso o forbice: ");
 
 function sasso (gioc2) {
-    if (gioc2=="carta"){
+     if (gioc2=="carta"){
         prompt ("Ha vinto giocatore 2 ");
     }
 
@@ -19,7 +19,7 @@ function sasso (gioc2) {
     if (gioc2=="forbice"){
         prompt ("Ha vinto giocatore 1");
     }
-
+    return "La partita è finita";
 }
 
 function carta (gioc2) {
@@ -34,7 +34,7 @@ function carta (gioc2) {
     if (gioc2=="sasso"){
         prompt ("Ha vinto giocatore 1");
     }
-
+     return "La partita è finita";
 }
 
 function forbice (gioc2) {
@@ -49,7 +49,7 @@ function forbice (gioc2) {
     if (gioc2=="scarta"){
         prompt ("Ha vinto giocatore 1");
     }
-
+    return "La partita è finita";
 }
 
 if(g1=="sasso"){   
