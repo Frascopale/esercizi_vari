@@ -57,31 +57,6 @@ console.log("Il numero piu' vicino alla media contenuto nell'array è: " +nvic);
 
 /*specificate se il numero e' presente nell'array, oppure indicate quanto dista dai due numeri piu' vicini*/
 
-/*function vicino2 (vettore,media){
-    nvicino = vettore[0];
-    
-        for(i= 1; i< vettore.length ; i++){
-           
-            if( Math.abs(vettore[i]-media)<=Math.abs(nvicino-media)){
-                nvicino=vettore[i];
-                if(media==nvicino){
-                    console.log("Il valore della media è uguale ad uno dei numeri ed è: " + nvicino);
-                } else{
-                    let val1 = Math.abs( vettore[i]-media);
-                    console.log("La diff del valore più vicino è: " + val1);
-                    
-                    
-
-                    
-                }
-                
-            }
-           
-        }
-    return nvicino;
-}
-
-let nvicm= vicino2(lista,med);*/
 
 
 
