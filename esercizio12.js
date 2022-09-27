@@ -69,12 +69,17 @@ function calcolosettimana(giorno,diff){
         if ( giorno==1){
             console.log("La differenza in settimane è: "+ tot);
         } 
-        if (giorno%7==1) {
-            if (giorno==8){ console.log("La differenza in settimane è:(1) "+ (tot+1));}
-            else if (8<giorno<=15) { console.log("La differenza in settimane è:(2) "+ (tot+2));} 
-            else if (15<giorno<=22) { console.log("La differenza in settimane è:(3) "+ (tot+3)); }
-            else if (22<giorno<=29) { console.log("La differenza in settimane è:(4) "+ (tot+4)); }
+        if (giorno>8 && giorno<=15) { 
+                console.log("La differenza in settimane è: "+ (tot+1));
+         } 
+        if (giorno>15 && giorno<=22) { 
+                console.log("La differenza in settimane è: "+ (tot+2)); 
+         }
+        if (22<giorno && giorno<29) {
+                 console.log("La differenza in settimane è: "+ (tot+3)); 
         }
     }
+    
 
 console.log(calcolosettimana(giorno,diff));
+console.log(giorno);
