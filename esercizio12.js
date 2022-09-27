@@ -36,3 +36,28 @@ function bisestile (anno){
 
 console.log(bisestile(anno));
 
+let data = new Date();
+const giorno= data.getDate();
+let mese = data.getMonth() + 1 ;
+let anno1 = data.getFullYear();
+console.log("oggi è: "+giorno+"/"+mese+"/"+anno1);
+
+function calcolomese (anno,anno1,mese){
+    if (mese>10){
+        let diff1 = (Math.abs(anno1-anno))*12;
+        let diff2 = mese-10;
+        let tot = diff1+ diff2;
+        console.log("La differenza in mesi è: "+ tot);
+    } else if ( mese==10){
+        let diff1 = (Math.abs(anno1-anno))*12;
+        console.log("La differenza in mesi è: "+ tot);
+    } else {
+        let diff1 = (Math.abs((anno1-1)-anno))*12;
+        let tot = diff1+ (mese-1);
+        console.log("La differenza in mesi è: "+ tot);
+    }
+}
+
+console.log(calcolomese(anno,anno1,mese));
+
+
