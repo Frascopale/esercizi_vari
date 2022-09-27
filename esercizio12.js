@@ -31,7 +31,7 @@ function bisestile (anno){
             console.log("Hai perso") 
         }
     }
-    return ;
+    return "";
 }
 
 console.log(bisestile(anno));
@@ -78,8 +78,8 @@ function calcolosettimana(giorno,diff){
         if (22<giorno && giorno<29) {
                  console.log("La differenza in settimane è: "+ (tot+3)); 
         }
+        return "";
     }
     
 
 console.log(calcolosettimana(giorno,diff));
-console.log(giorno);
