@@ -15,11 +15,23 @@ risp= prompt ("Secondo te è bisestile? ");
 
 function bisestile (anno){
     if(anno%400 ==0 || anno%4==0 && anno%100!=0){
-        console.log("Anno "+ anno+ " è bisestile")
+        console.log("Anno "+ anno+ " è bisestile") 
+        let g= true;
+        if (risp=="si" && g==true){
+            console.log("Hai vinto") 
+        } else { 
+            console.log("Hai perso") 
+        }
     } else{
         console.log("Anno "+ anno+ " non è bisestile")
+        let g=false;
+        if (risp=="no" && g==false){
+            console.log("Hai vinto") 
+        } else { 
+            console.log("Hai perso") 
+        }
     }
-    return "";
+    return ;
 }
 
 console.log(bisestile(anno));
