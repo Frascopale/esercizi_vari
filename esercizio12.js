@@ -43,21 +43,38 @@ let anno1 = data.getFullYear();
 console.log("oggi è: "+giorno+"/"+mese+"/"+anno1);
 
 function calcolomese (anno,anno1,mese){
+    let tot =0;
     if (mese>10){
         let diff1 = (Math.abs(anno1-anno))*12;
         let diff2 = mese-10;
-        let tot = diff1+ diff2;
+         tot = diff1+ diff2;
         console.log("La differenza in mesi è: "+ tot);
     } else if ( mese==10){
         let diff1 = (Math.abs(anno1-anno))*12;
-        console.log("La differenza in mesi è: "+ tot);
+        console.log("La differenza in mesi è: "+ diff1);
     } else {
         let diff1 = (Math.abs((anno1-1)-anno))*12;
-        let tot = diff1+ (mese-1);
+         tot = diff1+ (mese-1);
         console.log("La differenza in mesi è: "+ tot);
     }
+   return tot;
 }
 
-console.log(calcolomese(anno,anno1,mese));
+let diff = (calcolomese(anno,anno1,mese));
 
 
+function calcolosettimana(giorno,diff){
+        let tot = diff *4;
+         
+        if ( giorno==1){
+            console.log("La differenza in settimane è: "+ tot);
+        } 
+        if (giorno%7==1) {
+            if (giorno==8){ console.log("La differenza in settimane è:(1) "+ (tot+1));}
+            else if (8<giorno<=15) { console.log("La differenza in settimane è:(2) "+ (tot+2));} 
+            else if (15<giorno<=22) { console.log("La differenza in settimane è:(3) "+ (tot+3)); }
+            else if (22<giorno<=29) { console.log("La differenza in settimane è:(4) "+ (tot+4)); }
+        }
+    }
+
+console.log(calcolosettimana(giorno,diff));
